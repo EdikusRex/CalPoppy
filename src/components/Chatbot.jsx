@@ -1,15 +1,15 @@
     /** @jsxImportSource @emotion/react */
-    import { useEffect, useState } from "react";
-    import ChatComposer from "./ChatComposer";
-    import ChatWindow from "./ChatWindow";
-    import HeaderNav from "./HeaderNav";
-    import axios from "axios";
-    import "../style/chatbot.css";
+import { useEffect, useState } from "react";
+import ChatComposer from "./ChatComposer";
+import ChatWindow from "./ChatWindow";
+import HeaderNav from "./HeaderNav";
+import axios from "axios";
+import "../style/chatbot.css";
+
+const SENDER_USER = "user";
+const SENDER_BOT = "bot";
 
 export default function Chatbot(props) {
-    const SENDER_USER = "user";
-    const SENDER_BOT = "bot";
-
     const [suggestionsOpen, setSuggestionsOpen] = useState(false);
     const [query, setQuery] = useState("");
     const [conversation, setConversation] = useState([]);
@@ -58,7 +58,7 @@ export default function Chatbot(props) {
         }
 
         postMessage();
-    }, [query, conversation, responseCount]);
+    }, [query, conversation, responseCount]); //The useEffect is run if any of these values change
 
     /**
      * Adds the user's message to the conversation, passes message to the bot
@@ -86,6 +86,7 @@ export default function Chatbot(props) {
         };
         axios.post("log/query", payload);
     }
+
 
     return (
         <main className="Chatbot chatbotStyle">

@@ -1,13 +1,27 @@
 
 import suggestions from "./faqs";
+import answersToSuggestions from "./faqs";
 import {aboutSPR, aboutCreators, helpMessage} from "./faqs";
+import { useNavigate } from "react-router-dom";
+//import { useState } from "react";
 import '../style/faq.css';
 
-// function sendMessage(suggestion){
-
-// }
 
 export default function SuggestedOptions() {
+
+   const navigate = useNavigate();
+  // const SENDER_USER = "user";
+  //const [conversation, setConversation] = useState([]);
+
+  function sendSuggMessage(suggestion, answer){
+  //Run a function that links to the chat and sends a default message
+
+   //Chatbot.sendMessage(suggestion);
+   navigate("/chatbot");
+  //sendMessage(suggestion);
+
+  }
+
   return (
     <div class="container">
       <div class="row text-white center-block">
@@ -17,12 +31,12 @@ export default function SuggestedOptions() {
               <h4 class="card-title">Suggested Questions</h4>
               <h6>Click on any of the questions to ask Poppy!</h6>
               <div class="btn-group-vertical">
-                <button onClick="sendMessage(suggestions[0])" type="button" class="roundbutton">{suggestions[0]}</button>
-                <button onClick="sendMessage(suggestions[1])" type="button" class="roundbutton">{suggestions[1]}</button>
-                <button onClick="sendMessage(suggestions[2])" type="button" class="roundbutton">{suggestions[2]}</button>
-                <button onClick="sendMessage(suggestions[3])" type="button" class="roundbutton">{suggestions[3]}</button>
-                <button onClick="sendMessage(suggestions[4])" type="button" class="roundbutton">{suggestions[4]}</button>
-                <button onClick="sendMessage(suggestions[5])" type="button" class="roundbutton">{suggestions[5]}</button>
+                <button onClick={sendSuggMessage} type="button" class="roundbutton">{suggestions[0]}</button>
+                <button onClick = {() => sendSuggMessage(suggestions[1], answersToSuggestions[1])} type="button" class="roundbutton">{suggestions[1]}</button>
+                <button onClick="sendSuggMessage(suggestions[2])" type="button" class="roundbutton">{suggestions[2]}</button>
+                <button onClick="sendSuggMessage(suggestions[3])" type="button" class="roundbutton">{suggestions[3]}</button>
+                <button onClick="sendSuggMessage(suggestions[4])" type="button" class="roundbutton">{suggestions[4]}</button>
+                <button onClick="sendSuggMessage(suggestions[5])" type="button" class="roundbutton">{suggestions[5]}</button>
               </div>
             </div>
           </div>
