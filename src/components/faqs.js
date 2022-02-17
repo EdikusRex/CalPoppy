@@ -8,6 +8,16 @@ const suggestions = [
   "How do I plan a visit to Swanton?",
 ];
 
+const answersToSuggestions = [
+  "Answer0: Big",
+  "Answer1: Name",
+  "Answer2: Spanish",
+  "Answer3: Land Grant",
+  "Answer4: Plants",
+  "Answer5: Fun Fact",
+  "Answer6: Visit",
+];
+
 const aboutSPR = [`Swanton Pacific Ranch (SPR) is a 3200-acre satellite property of California Polytechnic State University 
 located in Santa Cruz County off Highway 1, ~60 miles south of San Francisco. The land is composed of a majestic redwood forest, 
 lush riverine ecosystems, and expansive coastal grassland overlooking the bay and the Pacific Ocean. It was donated to Cal Poly 
@@ -30,4 +40,4 @@ const helpMessage = ["Poppy needs your help to ensure that she can stay up and r
 "Interested in donating? Contact:", "Jeanine Scaramozzino", "swantonpoppycp@gmail.com"];
 
 export default suggestions;
-export {aboutSPR, aboutCreators, helpMessage};
+export {answersToSuggestions, aboutSPR, aboutCreators, helpMessage};
