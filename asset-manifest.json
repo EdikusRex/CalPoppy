@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/CalPoppy/static/css/main.5bb2fdfc.chunk.css",
+    "main.js": "/CalPoppy/static/js/main.8847f244.chunk.js",
+    "main.js.map": "/CalPoppy/static/js/main.8847f244.chunk.js.map",
+    "runtime-main.js": "/CalPoppy/static/js/runtime-main.e2dda030.js",
+    "runtime-main.js.map": "/CalPoppy/static/js/runtime-main.e2dda030.js.map",
+    "static/css/2.67d44514.chunk.css": "/CalPoppy/static/css/2.67d44514.chunk.css",
+    "static/js/2.83ba2a3b.chunk.js": "/CalPoppy/static/js/2.83ba2a3b.chunk.js",
+    "static/js/2.83ba2a3b.chunk.js.map": "/CalPoppy/static/js/2.83ba2a3b.chunk.js.map",
+    "static/js/3.7133a41b.chunk.js": "/CalPoppy/static/js/3.7133a41b.chunk.js",
+    "static/js/3.7133a41b.chunk.js.map": "/CalPoppy/static/js/3.7133a41b.chunk.js.map",
+    "index.html": "/CalPoppy/index.html",
+    "static/css/2.67d44514.chunk.css.map": "/CalPoppy/static/css/2.67d44514.chunk.css.map",
+    "static/css/main.5bb2fdfc.chunk.css.map": "/CalPoppy/static/css/main.5bb2fdfc.chunk.css.map",
+    "static/js/2.83ba2a3b.chunk.js.LICENSE.txt": "/CalPoppy/static/js/2.83ba2a3b.chunk.js.LICENSE.txt",
+    "static/media/home.scss": "/CalPoppy/static/media/poppymtn2.4fffe3a3.jpg",
+    "static/media/spr_logo.f4211a78.png": "/CalPoppy/static/media/spr_logo.f4211a78.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2dda030.js",
+    "static/css/2.67d44514.chunk.css",
+    "static/js/2.83ba2a3b.chunk.js",
+    "static/css/main.5bb2fdfc.chunk.css",
+    "static/js/main.8847f244.chunk.js"
+  ]
+}
